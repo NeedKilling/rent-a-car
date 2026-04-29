@@ -1,7 +1,6 @@
 import Image from "next/image";
 import CardCar from "./components/ui/card-car";
-import { ChevronLeft } from 'lucide-react';
-import { ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, CircleAlert , Clock, Map, Clipboard, RefreshCcw,   CircleX} from 'lucide-react';
 
 export default function Home() {
   return (
@@ -35,6 +34,68 @@ export default function Home() {
             </div>
         </div>  
       </section>
+
+
+    <section className="px-12 py-20">
+        <h2 className="font-bold text-5xl text-center ">Наши преимущества</h2>
+        <div className="mt-10 grid grid-cols-3 gap-6">
+
+            <div className="w-[432px] h-[300px] p-6 border-[2px] rounded-[8px]  border-[#F1F5F9] shadow-[0px_1px_4px_0px_#0C0C0D0D]">
+              <div className="w-10 h-10 flex justify-center items-center"><CircleAlert size={33.33} strokeWidth={1} className="text-blue-600"/></div>
+              <div className="w-[384px] h-[120px] mt-6">
+                <h3 className="font-bold text-2xl ">Новые автомобили</h3>
+                <div className="text-slate-500 mt-4">Все наши автомобили — новейшие модели, обеспечивающие комфорт и безопасность на дорогах.</div>
+              </div>
+            </div>
+            
+            <div className="w-[432px] h-[300px] p-6 border-[2px] rounded-[8px] border-[#F1F5F9] shadow-[0px_1px_4px_0px_#0C0C0D0D]">
+              <div className="w-10 h-10 flex justify-center items-center"><Clock size={33.33} strokeWidth={1} className="text-blue-600"/></div>
+              <div className="w-[384px] h-[120px] mt-6">
+                <h3 className="font-bold text-2xl ">Поддержка 24-часа</h3>
+                <div className="text-slate-500 mt-4">Мы доступны 24/7, чтобы помочь вам в любое время дня и ночи.</div>
+              </div>
+            </div>
+
+            <div className="w-[432px] h-[300px] p-6 border-[2px] rounded-[8px] border-[#F1F5F9] shadow-[0px_1px_4px_0px_#0C0C0D0D]">
+              <div className="w-10 h-10 flex justify-center items-center"><Map size={33.33} strokeWidth={1} className="text-blue-600"/></div>
+              <div className="w-[384px] h-[120px] mt-6">
+                <h3 className="font-bold text-2xl ">Удобное расположение</h3>
+                <div className="text-slate-500 mt-4">Наши точки аренды находятся в удобных локациях по всему городу, включая аэропорты и железнодорожные станции.</div>
+              </div>
+            </div>
+
+            <div className="w-[432px] h-[300px] p-6 border-[2px] rounded-[8px] border-[#F1F5F9] shadow-[0px_1px_4px_0px_#0C0C0D0D]">
+              <div className="w-10 h-10 flex justify-center items-center"><Clipboard size={33.33} strokeWidth={1} className="text-blue-600"/></div>
+              <div className="w-[384px] h-[120px] mt-6">
+                <h3 className="font-bold text-2xl ">Страховка на случай ДТП</h3>
+                <div className="text-slate-500 mt-4">Каждый арендуемый автомобиль защищён страховкой от ДТП, покрывающей основные риски.</div>
+              </div>
+            </div>
+
+            <div className="w-[432px] h-[300px] p-6 border-[2px] rounded-[8px] border-[#F1F5F9] shadow-[0px_1px_4px_0px_#0C0C0D0D]">
+              <div className="w-10 h-10 flex justify-center items-center"><RefreshCcw size={33.33} strokeWidth={1} className="text-blue-600"/></div>
+              <div className="w-[384px] h-[120px] mt-6">
+                <h3 className="font-bold text-2xl ">Экономьте до 50% на дальних поездках</h3>
+                <div className="text-slate-500 mt-4">Используйте наши специальные тарифы для длительных поездок и экономьте до 50%.</div>
+              </div>
+            </div>
+
+            <div className="w-[432px] h-[300px] p-6 border-[2px] rounded-[8px] border-[#F1F5F9] shadow-[0px_1px_4px_0px_#0C0C0D0D]">
+              <div className="w-10 h-10 flex justify-center items-center"><CircleX size={33.33} strokeWidth={1} className="text-blue-600"/></div>
+              <div className="w-[384px] h-[120px] mt-6">
+                <h3 className="font-bold text-2xl ">Бесплатная отмена за 48 часов</h3>
+                <div className="text-slate-500 mt-4">Предоставляем возможность бесплатной отмены брони за 48 часов до начала аренды.</div>
+              </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
 
     </div>
   );
