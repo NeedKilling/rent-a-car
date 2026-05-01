@@ -2,14 +2,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "./components/layout/footer";
 import Header from "./components/layout/header";
-import { Inter } from 'next/font/google'
-
+// import { Inter, Roboto   } from 'next/font/google'
+import { Inter   } from 'next/font/google'
+import { cn } from "@/lib/utils";
+import './globals.css'
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'], 
   variable: '--font-inter',      
   display: 'swap',
 })
+// const roboto = Roboto({
+//   subsets: ['latin', 'cyrillic'], 
+//   variable: '--font-roboto',      
+//   display: 'swap',
+// })
 
 
 export const metadata: Metadata = {
@@ -23,10 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className = {inter.variable} lang="en">
-      <body className={` w-[1440] mx-auto font-inter`}>
+    <html className = {cn("--font-inter", inter.variable)} lang="ru">
+      {/* <body className={`font-inter w-full  mx-auto flex flex-col min-h-screen `}>  ширина на весь экран */}
+      <body className={`font-inter  w-[1440px] mx-auto flex flex-col min-h-screen `}>       {/*  ширина экрана прям как по макету*/} 
         <Header />
-        {children}
+        <main className="flex-grow ">{children}</main>
         <Footer/>
       </body>
     </html>

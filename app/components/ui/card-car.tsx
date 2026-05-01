@@ -2,9 +2,9 @@ import image from "next/image"
 import { Image } from 'lucide-react';
 export default function CardCar(){
     return(
-        <div className="w-[318px] h-[516px] bg-[#fff] flex flex-col gap-4">
+        <div className="w-full md:max-w-[414px] h-[516px] bg-[#fff] flex flex-col gap-4 rounded-[8px]">
             {/* <image src="" width={318} height={280} alt=""></image> */}
-            <div className="w-fill h-[280px] bg-slate-50 flex  justify-center items-center">
+            <div className="w-fill h-[280px] bg-slate-50 flex  justify-center items-center rounded-tl-[8px] rounded-tr-[8px]">
                 <Image className = "w-[75px] h-[75px] text-slate-500" strokeWidth={0.5} />
             </div>
             <div className="pl-6">
@@ -17,7 +17,7 @@ export default function CardCar(){
                 </div>
             </div>
             <div className="border-[2px] w-fill text-[#F6F6F6]"></div>
-            <div><span className="pl-6 text-xl ont-bold">от 20 000 ₽</span> / сутки</div>
+            <div><span className="pl-6 text-xl font-bold">от 20 000 ₽</span> / сутки</div>
         </div>
     )
 }
